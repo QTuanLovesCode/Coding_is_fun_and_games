@@ -23,6 +23,7 @@ int32_t main(void)
 
     
     long long Max = 0, Min = 2e9;
+    /// First option: Vector 2d - MLE 1 test
     // for(int i = 1; i <= n; i++)
     //     for(int j = 1; j <= m; j++)
     //         cin >> a[i][j],
@@ -41,6 +42,8 @@ int32_t main(void)
     //             ans++;
 
     // cout << ans;
+    
+    /// Optimal solution: Compress the 2D array into 1D
     for(int i = 1; i <= n * m; i++) 
         cin >> a[i],
         Max = max(Max, a[i]),
